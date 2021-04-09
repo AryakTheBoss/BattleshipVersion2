@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.javamaster44.MainMenu"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javamaster44.MainMenu">
+   <children>
+      <VBox alignment="CENTER" layoutX="159.0" layoutY="120.0" prefHeight="200.0" prefWidth="282.0" scaleShape="false">
+         <children>
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#play" prefHeight="55.0" prefWidth="183.0" text="Play" />
+            <Separator orientation="VERTICAL" prefHeight="28.0" prefWidth="7.0" visible="false" />
+            <Button mnemonicParsing="false" onAction="#settings" prefHeight="33.0" prefWidth="139.0" text="Options" />
+         </children>
+      </VBox>
+      <Label layoutX="209.0" layoutY="51.0" text="Battleship 2.0">
+         <font>
+            <Font name="BN Machine" size="28.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
